@@ -1,0 +1,34 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>Image/About.png</file>
+        <file>Image/backup.png</file>
+        <file>Image/boss.png</file>
+        <file>Image/Close.png</file>
+        <file>Image/CompanyIcon.png</file>
+        <file>Image/DataManage.png</file>
+        <file>Image/delete.ico</file>
+        <file>Image/export.ico</file>
+        <file>Image/Finger.png</file>
+        <file>Image/icons8-name-tag-64.ico</file>
+        <file>Image/import.png</file>
+        <file>Image/loading.gif</file>
+        <file>Image/Min.png</file>
+        <file>Image/Open.png</file>
+        <file>Image/print.ico</file>
+        <file>Image/Print.png</file>
+        <file>Image/quit.ico</file>
+        <file>Image/Quit.png</file>
+        <file>Image/ReadCard.png</file>
+        <file>Image/Right.png</file>
+        <file>Image/search.ico</file>
+        <file>Image/Stop.png</file>
+        <file>Image/SysSetup.png</file>
+        <file>Image/Wrong.png</file>
+        <file>Image/查询.png</file>
+        <file>Image/身份证图.png</file>
+        <file>Image/验证失败.png</file>
+        <file>Image/验证通过.png</file>
+        <file>Image/company.png</file>
+        <file>Image/readButton.png</file>
+    </qresource>
+</RCC>

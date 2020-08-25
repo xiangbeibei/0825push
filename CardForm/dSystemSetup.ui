@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dSystemSetup</class>
+ <widget class="QDialog" name="dSystemSetup">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>305</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(1,192,198)</string>
+  </property>
+  <widget class="QPushButton" name="checkpushButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>10</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;华文中宋&quot;;color:white;font-weight:bold;border:none</string>
+   </property>
+   <property name="text">
+    <string>确认</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cancelpushButton">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>10</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;华文中宋&quot;;color:white;font-weight:bold;border:none</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+   <property name="autoRepeat">
+    <bool>true</bool>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>10</y>
+     <width>108</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 25px &quot;华文中宋&quot;;color:white;font-weight:bold</string>
+   </property>
+   <property name="text">
+    <string>系统设置</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="cameraSetting">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>94</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;background:rgb(1,192,198);color:white;font-size:22px;font-weight:bold；</string>
+   </property>
+   <property name="text">
+    <string>摄像头设置</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="imagePathSetting">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>154</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;background:rgb(1,192,198);color:white;font-size:22px;font-weight:bold；</string>
+   </property>
+   <property name="text">
+    <string>图片路径设置</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="readerSetting">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>214</y>
+     <width>149</width>
+     <height>43</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:2px solid white;background:rgb(1,192,198);color:white;font-size:22px;font-weight:bold；</string>
+   </property>
+   <property name="text">
+    <string>阅读器设置</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="soundCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>94</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 22px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+   </property>
+   <property name="text">
+    <string>语音提示</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="cleanCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>134</y>
+     <width>211</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 22px &quot;华文中宋&quot;;color:white;font-weight:bold</string>
+   </property>
+   <property name="text">
+    <string>自动清除显示内容</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="thresholdCheckBox">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>214</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 22px&quot;华文中宋&quot;;color:white;font-weight:bold</string>
+   </property>
+   <property name="text">
+    <string>设置阈值</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>174</y>
+     <width>51</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:22px &quot;华文中宋&quot;;color:white;font-weight:bold</string>
+   </property>
+   <property name="text">
+    <string>延迟</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="cleanLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>181</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>174</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 22px &quot;华文中宋&quot;;color:white;font-weight:bold</string>
+   </property>
+   <property name="text">
+    <string>秒清除</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="thresholdLineEdit">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>220</y>
+     <width>61</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>50</y>
+     <width>534</width>
+     <height>2</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color:white;border-top: solid white; </string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>70</y>
+     <width>241</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;border:2px solid white;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <zorder>cancelpushButton</zorder>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>70</y>
+     <width>241</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;border:2px solid white;</string>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+  </widget>
+  <zorder>groupBox_2</zorder>
+  <zorder>groupBox_3</zorder>
+  <zorder>checkpushButton</zorder>
+  <zorder>cancelpushButton</zorder>
+  <zorder>label</zorder>
+  <zorder>cameraSetting</zorder>
+  <zorder>imagePathSetting</zorder>
+  <zorder>readerSetting</zorder>
+  <zorder>soundCheckBox</zorder>
+  <zorder>cleanCheckBox</zorder>
+  <zorder>thresholdCheckBox</zorder>
+  <zorder>label_2</zorder>
+  <zorder>cleanLineEdit</zorder>
+  <zorder>label_3</zorder>
+  <zorder>thresholdLineEdit</zorder>
+  <zorder>line</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,97 @@
+QToolButton{
+   color:white;
+   qproperty-minimumSize: 80px 86px;
+   qproperty-maximumSize: 80px 86px;
+   background:rgb(1,192,198);
+   border-radius:8px;
+   border-style: solid; border-width: 3px;
+   border-color:white;
+
+}
+
+QPushButton#btnClose
+{
+   background-image:url(Close.png);
+   border-radius:3px;
+   border-style: solid; border-width: 2px;
+   border-color:white;
+}
+
+QPushButton#btnMin
+{
+   background-image:url(Min.png);
+   border-radius:3px;
+   border-style: solid; border-width: 2px;
+   border-color:white;
+}
+
+
+QGroupBox
+{
+    border-radius:8px;
+    border-style: solid; border-width: 2px;
+    border-color:white;
+    color:white;
+    font-size:20px;
+    font-weight:1100;
+}
+
+QLabel#labReaderState
+{
+    color:white;
+    font-size:20px;
+    font-weight:900;
+}
+
+QLabel#labTextFinger
+{
+    color:white;
+    font-size:20px;
+    font-weight:900;
+
+}
+
+QLabel#textCameraCatch
+{
+    color:white;
+    font-size:20px;
+    font-weight:900;
+
+}
+
+QLabel#textCardHeadPic
+{
+    color:white;
+    font-size:20px;
+    font-weight:900;
+
+}
+
+QLabel#pixCardOfCheck
+{
+    background:white;
+}
+
+QLabel#pixCameraCatched
+{
+    background:white;
+}
+
+QLabel#labBtnMin
+{
+    border-radius:3px;
+    border-style: solid; border-width: 2px;
+    border-color:white;
+}
+
+QLabel#labBtnClose
+{
+    border-radius:3px;
+    border-style: solid; border-width: 2px;
+    border-color:white;
+}
+
+QLabel#labTitle
+{
+
+}

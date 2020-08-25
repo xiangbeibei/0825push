@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1235</width>
+    <height>670</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CardForm</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:rgb(1,196,198)</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>12</y>
+      <width>474</width>
+      <height>42</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 27.75pt &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>智 能 人 证 核 验 系 统</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <property name="wordWrap">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="cameraView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>77</y>
+      <width>671</width>
+      <height>491</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>686</x>
+      <y>78</y>
+      <width>538</width>
+      <height>281</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;border:3px solid white;border-radius:10px</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <property name="flat">
+     <bool>false</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cardPicture">
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>98</y>
+      <width>170</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="peoplePicture">
+    <property name="geometry">
+     <rect>
+      <x>1027</x>
+      <y>98</y>
+      <width>170</width>
+      <height>210</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultPicture">
+    <property name="geometry">
+     <rect>
+      <x>898</x>
+      <y>113</y>
+      <width>107</width>
+      <height>98</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>737</x>
+      <y>318</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20px&quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>[身份证头像]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>1055</x>
+      <y>318</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>[人脸采集图]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallpicture">
+    <property name="geometry">
+     <rect>
+      <x>950</x>
+      <y>413</y>
+      <width>121</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/image/Image/boss.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1121</x>
+      <y>463</y>
+      <width>91</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/image/Image/Finger.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>688</x>
+      <y>373</y>
+      <width>411</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;border:3px solid white;border-radius:10px</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignHCenter|Qt::AlignTop</set>
+    </property>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>391</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap resource="image.qrc">:/image/Image/ReadCard.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>1108</x>
+      <y>373</y>
+      <width>114</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;border:3px solid white;border-radius:10px</string>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1117</x>
+      <y>633</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>[指纹比对]</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="startToolButton">
+    <property name="geometry">
+     <rect>
+      <x>13</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>开始比对</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/Open.png</normaloff>:/image/Image/Open.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>62</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="readToolButton">
+    <property name="geometry">
+     <rect>
+      <x>108</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>读身份证</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/readButton.png</normaloff>:/image/Image/readButton.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="autoRepeat">
+     <bool>true</bool>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="dataToolButton">
+    <property name="geometry">
+     <rect>
+      <x>203</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>数据管理</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/DataManage.png</normaloff>:/image/Image/DataManage.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="settingToolButton">
+    <property name="geometry">
+     <rect>
+      <x>298</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>系统设置</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/SysSetup.png</normaloff>:/image/Image/SysSetup.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="printToolButton">
+    <property name="geometry">
+     <rect>
+      <x>393</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>打印凭证</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/Print.png</normaloff>:/image/Image/Print.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>60</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="aboutToolButton">
+    <property name="geometry">
+     <rect>
+      <x>488</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>关于我们</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/About.png</normaloff>:/image/Image/About.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>62</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="quitToolButton">
+    <property name="geometry">
+     <rect>
+      <x>583</x>
+      <y>573</y>
+      <width>95</width>
+      <height>91</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:3px solid white;background:rgb(1,192,198);color:white;font-size:15px;font-weight:bold;border-radius:10px</string>
+    </property>
+    <property name="text">
+     <string>退出程序</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/Quit.png</normaloff>:/image/Image/Quit.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>60</width>
+      <height>65</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextUnderIcon</enum>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="MintoolButton">
+    <property name="geometry">
+     <rect>
+      <x>1155</x>
+      <y>0</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid white;border-radius:5px</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/Min.png</normaloff>:/image/Image/Min.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="closetoolButton">
+    <property name="geometry">
+     <rect>
+      <x>1195</x>
+      <y>0</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border:2px solid white;border-radius:5px</string>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+    <property name="icon">
+     <iconset resource="image.qrc">
+      <normaloff>:/image/Image/Close.png</normaloff>:/image/Image/Close.png</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>64</width>
+      <height>64</height>
+     </size>
+    </property>
+    <property name="autoRaise">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallname">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>413</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallgender">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>439</y>
+      <width>21</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallnation">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>439</y>
+      <width>121</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallyear">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>467</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallmonth">
+    <property name="geometry">
+     <rect>
+      <x>817</x>
+      <y>467</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallday">
+    <property name="geometry">
+     <rect>
+      <x>857</x>
+      <y>467</y>
+      <width>21</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smalladdress">
+    <property name="geometry">
+     <rect>
+      <x>760</x>
+      <y>486</y>
+      <width>181</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 9pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallid">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>543</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 8pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="wordWrap">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smalloffice">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>569</y>
+      <width>161</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>华文中宋</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="smallvalid">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>593</y>
+      <width>161</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 10pt &quot;华文中宋&quot;;background:transparent</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labReaderState">
+    <property name="geometry">
+     <rect>
+      <x>700</x>
+      <y>633</y>
+      <width>391</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>[未启动... ...]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultText">
+    <property name="geometry">
+     <rect>
+      <x>891</x>
+      <y>318</y>
+      <width>122</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="resultNum">
+    <property name="geometry">
+     <rect>
+      <x>890</x>
+      <y>233</y>
+      <width>122</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 20pt &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>60</y>
+      <width>1251</width>
+      <height>3</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:white;border-top: solid white; </string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>886</x>
+      <y>70</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>人脸比对信息</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>363</y>
+      <width>121</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>身份证信息</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>363</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font:20px &quot;华文中宋&quot;;color:white;font-weight:bold;</string>
+    </property>
+    <property name="text">
+     <string>指纹信息</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>groupBox_2</zorder>
+   <zorder>groupBox_3</zorder>
+   <zorder>label</zorder>
+   <zorder>cameraView</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>cardPicture</zorder>
+   <zorder>peoplePicture</zorder>
+   <zorder>resultPicture</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>smallpicture</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_7</zorder>
+   <zorder>startToolButton</zorder>
+   <zorder>readToolButton</zorder>
+   <zorder>dataToolButton</zorder>
+   <zorder>settingToolButton</zorder>
+   <zorder>printToolButton</zorder>
+   <zorder>aboutToolButton</zorder>
+   <zorder>quitToolButton</zorder>
+   <zorder>MintoolButton</zorder>
+   <zorder>closetoolButton</zorder>
+   <zorder>smallname</zorder>
+   <zorder>smallgender</zorder>
+   <zorder>smallnation</zorder>
+   <zorder>smallyear</zorder>
+   <zorder>smallmonth</zorder>
+   <zorder>smallday</zorder>
+   <zorder>smalladdress</zorder>
+   <zorder>smallid</zorder>
+   <zorder>smalloffice</zorder>
+   <zorder>smallvalid</zorder>
+   <zorder>labReaderState</zorder>
+   <zorder>resultText</zorder>
+   <zorder>resultNum</zorder>
+   <zorder>line</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_8</zorder>
+   <zorder>label_9</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1235</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>
